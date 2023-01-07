@@ -1,0 +1,29 @@
+# Package name and version
+name = "tensornet"
+version = "1.0.0"
+
+# Package maintainer and authors
+maintainer = "Tensornetics Team"
+authors = [
+    "Kyle Grant <kyle@tensornetics.com>",
+]
+
+# Package description
+description = """
+Tensornet is a lightweight and fast operating system designed for web-based applications. It features a custom kernel, a comprehensive set of device drivers, and a wide range of system libraries and APIs. With Tensornet, you can build powerful and efficient web-based applications with ease.
+"""
+
+# Package dependencies
+[dependencies]
+kernel = "= 1.0.0"
+device-drivers = "= 1.0.0"
+system-libraries = "= 1.0.0"
+
+# Package homepage
+homepage = "https://www.tensornetics.com/tensornet"
+
+# Package documentation
+documentation = "https://www.tensornetics.com/tensornet/docs"
+
+# Package repository
+repository = "https://github.com/tensornetics/tensornet"

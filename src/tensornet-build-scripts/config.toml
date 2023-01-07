@@ -1,0 +1,22 @@
+# This is the configuration file for the tensornet operating system
+
+# Kernel settings
+[kernel]
+memory_size = 4096 # Size of the kernel's memory in MB
+
+# Device driver settings
+[device_drivers]
+keyboard = true # Enable the keyboard driver
+display = true # Enable the display driver
+disk = false # Disable the disk driver
+
+# System library settings
+[system_libraries]
+stdio = true # Enable the stdio library
+string = true # Enable the string library
+
+# App settings
+[apps]
+app1 = true # Enable app1
+app2 = false # Disable app2
+app3 = true # Enable app3
