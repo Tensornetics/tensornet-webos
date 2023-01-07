@@ -1,0 +1,90 @@
+mod keyboard_driver {
+    use super::{DeviceDriver, Error};
+    use std::io::{Read, Write};
+
+    pub struct KeyboardDriver {
+        input: Box<dyn Read>,
+        output: Box<dyn Write>,
+    }
+
+    impl KeyboardDriver {
+        pub fn new(input: Box<dyn Read>, output: Box<dyn Write>) -> Self {
+            Self { input, output }
+        }
+    }
+
+    impl DeviceDriver for KeyboardDriver {
+        fn read(&self, buffer: &mut [u8]) -> Result<usize, Error> {
+            match self.input.read(buffer) {
+                Ok(n) => Ok(n),
+                Err(e) => Err(Error::IoError(e)),
+            }
+        }
+
+        fn write(&self, buffer: &[u8]) -> Result<usize, Error> {
+            match self.output.write(buffer) {
+                Ok(n) => Ok(n),
+                Err(e) => Err(Error::IoError(e)),
+            }
+        }
+    }
+}
+
+mod mouse_driver {
+    use super::{DeviceDriver, Error};
+    use std::io::{Read, Write};
+
+    pub struct MouseDriver {
+        input: Box<dyn Read>,
+        output: Box<dyn Write>,
+    }
+
+    impl MouseDriver {
+        pub fn new(input: Box<dyn Read>, output: Box<dyn Write>) -> Self {
+            Self { input, output }
+        }
+    }
+
+    impl DeviceDriver for MouseDriver {
+        fn read(&self, buffer: &mut [u8]) -> Result<usize, Error> {
+            match self.input.read(buffer) {
+                Ok(n) => Ok(n),
+                Err(e) => Err(Error::IoError(e)),
+            }
+        }
+
+        fn write(&self, buffer: &[u8]) -> Result<usize, Error> {
+            match self.output.write(buffer) {
+                Ok(n) => Ok(n),
+                Err(e) => Err(Error::IoError(e)),
+            }
+        }
+    }
+}
+
+mod audio_driver {
+    use super::{DeviceDriver, Error};
+    use std::io::{Read, Write};
+
+    pub struct AudioDriver {
+        input: Box<dyn Read>,
+        output: Box<dyn Write>,
+    }
+
+    impl AudioDriver {
+        pub fn new(input: Box<dyn Read>, output: Box<dyn Write>) -> Self {
+            Self { input, output }
+        }
+    }
+
+    impl DeviceDriver for AudioDriver {
+        fn read(&self, buffer: &mut [u8]) -> Result<usize, Error> {
+            match self.input.read(buffer) {
+                Ok(n) => Ok(n),
+                Err(e) => Err(Error::IoError(e)),
+            }
+        }
+
+        fn write(&self, buffer: &[u8]) -> Result<usize, Error> {
+            match self.output
+}
