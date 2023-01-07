@@ -1,0 +1,17 @@
+[package]
+name = "tensornet"
+version = "0.1.0"
+authors = ["John Doe <john@example.com>"]
+
+[dependencies]
+tensornet-core = { path = "src/tensornet-core" }
+tensornet-applications = { path = "src/tensornet-applications" }
+tensornet-website = { path = "src/tensornet-website" }
+
+[dev-dependencies]
+tensornet-tests = { path = "tests/tensornet-tests" }
+tensornet-build-scripts = { path = "src/tensornet-build-scripts" }
+
+[features]
+default = ["tensornet-core", "tensornet-applications", "tensornet-website"]
+dev = ["tensornet-tests", "tensornet-build-scripts"]
