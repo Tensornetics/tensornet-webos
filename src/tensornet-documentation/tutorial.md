@@ -1,0 +1,24 @@
+Getting Started with Tensornet
+In this tutorial, we will guide you through the process of setting up and using Tensornet, the web-based operating system that lets you run applications and manage your devices from any device with a web browser.
+
+Prerequisites
+Before you begin, make sure you have the following:
+
+A device with a web browser (such as a computer, smartphone, or tablet)
+Internet access
+The URL for the Tensornet host
+Your login credentials
+Step 1: Accessing Tensornet
+To access Tensornet, open a web browser on your device and navigate to the URL where Tensornet is hosted. You will be prompted to enter your login credentials. Once you have successfully logged in, you will see the Tensornet home screen.
+
+Step 2: Running Applications
+Tensornet comes with a variety of built-in applications, ranging from productivity tools to games. To run an application, simply click on its icon on the home screen. You can also search for applications by clicking on the search bar at the top of the screen and typing in the name of the application you want to run.
+
+Step 3: Managing Devices
+Tensornet lets you manage your connected devices from anywhere. To access the device manager, click on the "Devices" tab on the left side of the screen. From here, you can view a list of all your connected devices and perform various actions, such as installing updates or changing settings.
+
+Step 4: Customizing Tensornet
+Tensornet lets you customize the look and feel of the operating system to suit your personal preferences. To access the settings menu, click on the "Settings" tab on the left side of the screen. From here, you can change the theme, wallpaper, and other settings to make Tensornet your own.
+
+Conclusion
+Congratulations, you are now up and running with Tensornet! With its powerful capabilities and user-friendly interface, it's never been easier to manage your devices and run applications from anywhere. Thank you for choosing Tensornet.
